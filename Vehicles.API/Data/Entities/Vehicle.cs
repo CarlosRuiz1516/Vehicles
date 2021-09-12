@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Vehicles.API.Data.Entities
 {
     public class Vehicle
-
+//prueba vehiculo
     {
         public int Id { get; set; }
 
@@ -58,7 +58,7 @@ namespace Vehicles.API.Data.Entities
         //TODO: Fix the corret path
         [Display(Name = "Foto")]
         public string ImageFullPath => VehiclePhotos == null || VehiclePhotos.Count == 0
-            ? $"https://localhost:44345/images/noimage.png"
+            ? $"https://localhost:5001/images/noimage.png"
             : VehiclePhotos.FirstOrDefault().ImaFullPath;
 
         public ICollection<History> Histories { get; set; }

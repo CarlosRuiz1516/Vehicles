@@ -19,7 +19,7 @@ namespace Vehicles.API.Data.Entities
         //TODO: Fix the correct path
         [Display(Name = "Foto")]
         public string ImaFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:44345/images/noimage.png"
+            ? $"https://localhost:5001/images/noimage.png"
             : $"https://vehicleszuluprep.blob.core.windows.net/vehicles/{ImageId}";
     }
 }
